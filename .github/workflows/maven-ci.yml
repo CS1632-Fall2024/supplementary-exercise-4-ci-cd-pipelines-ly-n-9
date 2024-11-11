@@ -56,10 +56,10 @@ jobs:
 
     needs: [maven_test]
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    # Enforces that maven test runs first
 
     permissions:
-      contents: read
+      contents: write
 
     steps:
 
